@@ -121,14 +121,15 @@ const Hero = ({ scrollToSection }: HeroProps) => {
                 Let's Connect
               </Button>
               <Button
-                onClick={() => window.open('/resume.pdf', '_blank')}
-                variant="ghost"
-                size="lg"
-                className="text-gray-300 hover:text-white border border-gray-600 hover:border-gray-400 px-8 py-4 rounded-xl backdrop-blur-sm bg-white/5 transition-all duration-300"
+              onClick={() => window.open('https://docs.google.com/document/d/1KHlsO4aWd-RMGVT1frguD2Olob_qb9dP3aXrN9PrVOw/export?format=pdf', '_blank')}
+              variant="ghost"
+              size="lg"
+              className="text-gray-300 hover:text-white border border-gray-600 hover:border-gray-400 px-8 py-4 rounded-xl backdrop-blur-sm bg-white/5 transition-all duration-300"
               >
-                <Download className="w-5 h-5 mr-2" />
-                Resume
+              <Download className="w-5 h-5 mr-2" />
+              Resume
               </Button>
+
             </motion.div>
 
             {/* Enhanced Skills Section */}
@@ -175,7 +176,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
               >
                 <div className="flex items-center gap-2 text-white">
                   <Cloud className="w-5 h-5 text-blue-400" />
-                  <span className="text-sm font-medium">AWS Certified</span>
+                  <span className="text-sm font-medium">AWS</span>
                 </div>
               </motion.div>
 
@@ -186,7 +187,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
               >
                 <div className="flex items-center gap-2 text-white">
                   <Server className="w-5 h-5 text-green-400" />
-                  <span className="text-sm font-medium">DevOps Expert</span>
+                  <span className="text-sm font-medium">DevOps</span>
                 </div>
               </motion.div>
 
@@ -199,11 +200,17 @@ const Hero = ({ scrollToSection }: HeroProps) => {
                 />
                 
                 <div className="relative w-80 h-80 bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500 rounded-full p-1">
-                  <div className="w-full h-full bg-slate-900 rounded-full flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20" />
-                    <div className="text-8xl relative z-10">👨‍💻</div>
-                  </div>
+                <div className="w-full h-full bg-slate-900 rounded-full flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20" />
+    
+                <img
+                src="https://i.postimg.cc/V6hy6Cjq/Chat-GPT-Image-Jul-5-2025-07-02-42-PM.png"
+                alt="Sahil Gawade Ghibli Avatar"
+                className="relative z-10 rounded-full object-cover w-full h-full"
+                />
                 </div>
+                </div>
+
                 
                 {/* Experience Badge */}
                 <motion.div
@@ -214,8 +221,8 @@ const Hero = ({ scrollToSection }: HeroProps) => {
                   className="absolute -top-6 -right-6 bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-6 py-3 rounded-2xl font-bold shadow-lg"
                 >
                   <div className="text-center">
-                    <div className="text-2xl font-bold">2+</div>
-                    <div className="text-xs">Years Experience</div>
+                    <div className="text-2xl font-bold"></div>
+                    <div className="text-xs"></div>
                   </div>
                 </motion.div>
               </div>

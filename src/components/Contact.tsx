@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -66,15 +68,32 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    emailjs.send(
+      'service_izbpwco',
+      'template_hpte7ls',
+      {
+        from_name: formData.name,
+        reply_to: formData.email,
+        message: formData.message,
+      },
+      'NH1o-w9QKVoTE6MHV'
+    )
+    .then(() => {
       setIsSubmitting(false);
       toast({
-        title: "Message Sent!",
+        title: "✅ Message Sent!",
         description: "Thank you for your message. I'll get back to you soon!",
       });
       setFormData({ name: '', email: '', message: '' });
-    }, 2000);
+    })
+    .catch((error) => {
+      setIsSubmitting(false);
+      toast({
+        title: "❌ Error",
+        description: "Something went wrong. Please try again later.",
+      });
+      console.error("EmailJS error:", error);
+    });
   };
 
   return (

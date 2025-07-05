@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Cloud, ShoppingCart, Car, Database } from 'lucide-react';
+import { ExternalLink, Github, Cloud, ShoppingCart, Car, Database, School } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Portfolio = () => {
@@ -23,34 +23,17 @@ const Portfolio = () => {
         'Real-time monitoring',
       ],
     },
-    {
-      title: 'Multi-Tier Web Application on AWS',
-      description: 'Enterprise-grade web application with load balancing, auto-scaling, and database replication across multiple availability zones.',
-      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop',
-      technologies: ['AWS ELB', 'RDS', 'VPC', 'Auto Scaling', 'Kubernetes', 'Prometheus', 'Grafana'],
-      icon: <Cloud className="w-6 h-6" />,
-      color: 'from-green-500 to-teal-500',
-      links: {
-        demo: '#',
-        github: '#',
-      },
-      highlights: [
-        'High availability design',
-        'Database clustering',
-        'Performance monitoring',
-        'Security best practices',
-      ],
-    },
+    
     {
       title: 'Car Rental System - Web Application',
       description: 'Full-featured car rental management system with booking functionality, payment processing, and administrative dashboard.',
       image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop',
       technologies: ['PHP', 'MySQL', 'Docker', 'NGINX', 'Git', 'Linux', 'Bootstrap'],
-      icon: <Car className="w-6 h-6" />,
+      icon: <Car className="w-6 h-6" />, 
       color: 'from-purple-500 to-pink-500',
       links: {
         demo: '#',
-        github: '#',
+        github: 'https://github.com/Sahildyno/Car-Rental-System.git',
       },
       highlights: [
         'Complete CRUD operations',
@@ -59,24 +42,27 @@ const Portfolio = () => {
         'Payment integration',
       ],
     },
+
     {
-      title: 'Infrastructure Automation Pipeline',
-      description: 'Automated infrastructure provisioning and deployment pipeline using Terraform, Ansible, and Jenkins for rapid environment setup.',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop',
-      technologies: ['Terraform', 'Ansible', 'Jenkins', 'AWS', 'Python', 'Bash', 'Git'],
-      icon: <Database className="w-6 h-6" />,
-      color: 'from-orange-500 to-red-500',
-      links: {
-        demo: '#',
-        github: '#',
-      },
-      highlights: [
-        'Infrastructure as Code',
-        'Automated deployments',
-        'Environment consistency',
-        'Rollback capabilities',
-      ],
-    },
+  title: 'StudentApp.UI',
+  description: 'A full-stack student management system deployed on AWS, featuring user login, student records, admin dashboard, and analytics.',
+  image: 'https://i.postimg.cc/4xh69nmQ/close-up-person-holding-smartphone-1.jpg', // You can update this with your own app screenshot
+  technologies: ['AWS EC2', 'S3', 'Terraform', 'Docker', 'GitLab CI/CD', 'React', 'Node.js', 'MySQL'],
+  icon: <School className="w-6 h-6" />, // You can use another icon if needed
+  color: 'from-green-500 to-blue-500',
+  links: {
+    demo: '#',   // ✅ Replace with your live link
+    github: 'https://github.com/Sahildyno/studentapp-ui.git', // ✅ Replace with your repo link
+  },
+  highlights: [
+    'Deployed on AWS EC2 with NGINX reverse proxy',
+    'Infrastructure automated using Terraform',
+    'CI/CD setup with GitLab pipelines',
+    'MySQL database with data backup strategy',
+  ],
+}
+
+    
   ];
 
   return (
