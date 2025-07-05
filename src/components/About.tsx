@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { GraduationCap, Briefcase, Award, Code, Cloud, Settings } from 'lucide-react';
+import { GraduationCap, Briefcase, Award, Code, Cloud, Settings, Database } from 'lucide-react';
 
 const About = () => {
   const timeline = [
@@ -43,8 +43,20 @@ const About = () => {
     {
       title: 'Programming & Scripting',
       icon: <Code className="w-6 h-6" />,
-      skills: ['Bash/Shell', 'Python', 'Django', 'MySQL', 'SQL', 'Linux', 'NGINX', 'FTP', 'SSH'],
+      skills: ['Bash/Shell', 'Python', 'Django'],
       color: 'from-purple-500 to-pink-500',
+    },
+    {
+      title: 'Database',
+      icon: <Database className="w-6 h-6" />,
+      skills: ['MySQL', 'SQL'],
+      color: 'from-orange-500 to-red-500',
+    },
+    {
+      title: 'Web & Server',
+      icon: <Settings className="w-6 h-6" />,
+      skills: ['Linux', 'NGINX', 'FTP', 'SSH'],
+      color: 'from-indigo-500 to-purple-500',
     },
   ];
 
