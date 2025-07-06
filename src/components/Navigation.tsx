@@ -16,7 +16,7 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
     { id: 'hero', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'services', label: 'Services' },
-    { id: 'portfolio', label: 'Portfolio' },
+    { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -47,12 +47,7 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
                 {item.label}
               </button>
             ))}
-            <Button
-              onClick={() => window.open('/resume.pdf', '_blank')}
-              className="bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600"
-            >
-              Download CV
-            </Button>
+            
           </div>
 
           {/* Mobile Menu Button */}

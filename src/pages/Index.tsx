@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Services from '@/components/Services';
-import Portfolio from '@/components/Portfolio';
+import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import Navigation from '@/components/Navigation';
 
@@ -15,7 +15,7 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'services', 'portfolio', 'contact'];
+      const sections = ['hero', 'about', 'services', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -59,8 +59,8 @@ const Index = () => {
         <Services />
       </section>
 
-      <section id="portfolio" className="relative">
-        <Portfolio />
+      <section id="projects" className="relative">
+        <Projects />
       </section>
 
       <section id="contact" className="relative">

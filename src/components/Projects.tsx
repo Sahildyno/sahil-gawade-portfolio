@@ -76,7 +76,7 @@ const Portfolio = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Featured <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">Projects</span>
+            <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">

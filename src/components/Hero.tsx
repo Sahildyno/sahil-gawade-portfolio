@@ -68,7 +68,8 @@ const Hero = ({ scrollToSection }: HeroProps) => {
               className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 backdrop-blur-sm border border-green-500/30 rounded-full px-4 py-2 mb-6"
             >
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-green-300 text-sm font-medium">Available for DevOps Projects</span>
+              <span className="text-green-300 text-sm font-medium">Seraching For New Opportunity
+</span>
             </motion.div>
 
             <motion.h1

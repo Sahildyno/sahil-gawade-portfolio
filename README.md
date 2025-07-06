@@ -1,73 +1,115 @@
-# Welcome to your Lovable project
+# Sahil Gawade - Portfolio Website
 
-## Project info
+Welcome to my personal portfolio website!  
+This project showcases my work, skills, and experience as a **DevOps Engineer** and **Cloud Architect**.
 
-**URL**: https://lovable.dev/projects/7faf05bc-e3f7-4ccf-bad1-c43fc2c2d52d
+![Hero Banner](https://i.postimg.cc/V6hy6Cjq/Chat-GPT-Image-Jul-5-2025-07-02-42-PM.png)
 
-## How can I edit this code?
+## 🚀 Live Demo
 
-There are several ways of editing your application.
+🔗 [Visit Portfolio](https://sahil-gawade.netlify.app) *(replace with your actual link)*
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7faf05bc-e3f7-4ccf-bad1-c43fc2c2d52d) and start prompting.
+## 📌 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- 🌐 Fully responsive design
+- 🎬 Smooth animations with Framer Motion
+- 💼 Projects and resume download
+- ☁️ Skills in AWS, Docker, Terraform, Jenkins, Kubernetes
+- 📩 Contact form with scroll-to-section
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend**: React + TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide Icons
+- **Build Tool**: Vite
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 Project Structure
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+sahil-gawade-portfolio/
+├── public/
+├── src/
+│ ├── assets/
+│ ├── components/
+│ │ └── Hero.tsx
+│ ├── pages/
+│ └── App.tsx
+├── tailwind.config.ts
+├── vite.config.ts
+└── README.md
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## 🧪 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/Sahildyno/sahil-gawade-portfolio.git
+cd sahil-gawade-portfolio
+2. Install dependencies
+
+npm install
+# or
+yarn install
+3. Run the development server
+
 npm run dev
-```
+# or
+yarn dev
+The app will run at http://localhost:5173.
 
-**Edit a file directly in GitHub**
+📄 Resume
+You can view and download my resume from the portfolio or this link.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🧑‍💻 About Me
+I'm Sahil Gawade, a passionate DevOps Engineer with experience in:
 
-**Use GitHub Codespaces**
+Cloud Infrastructure (AWS)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+CI/CD Automation (Jenkins, GitHub Actions)
 
-## What technologies are used for this project?
+Infrastructure as Code (Terraform)
 
-This project is built with:
+Containerization (Docker, Kubernetes)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Monitoring & Alerting
 
-## How can I deploy this project?
+📬 Contact
+Want to collaborate or hire me?
 
-Simply open [Lovable](https://lovable.dev/projects/7faf05bc-e3f7-4ccf-bad1-c43fc2c2d52d) and click on Share -> Publish.
+📧 Email: sahil.gawade@example.com
+🔗 LinkedIn: linkedin.com/in/sahil-gawade
+🐱 GitHub: github.com/Sahildyno
 
-## Can I connect a custom domain to my Lovable project?
+⭐ Acknowledgements
+Framer Motion
 
-Yes, you can!
+Lucide Icons
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Tailwind CSS
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Vite
+
+📌 License
+This project is licensed under the MIT License.
+
+
+
+---
+
+### 📥 How to Add It:
+
+1. Create a file called `README.md` in your root folder.
+2. Paste the content above.
+3. Customize any placeholder URLs if needed.
+
+Let me know if you also want a `LICENSE`, `favicon`, or `SEO meta tags` for the portfolio.
