@@ -82,12 +82,7 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
                 {item.label}
               </button>
             ))}
-            <Button
-              onClick={() => window.open('/resume.pdf', '_blank')}
-              className="mt-4 bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600"
-            >
-              Download CV
-            </Button>
+           
           </motion.div>
         )}
       </div>
