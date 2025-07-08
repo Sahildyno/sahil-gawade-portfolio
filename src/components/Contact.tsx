@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -55,6 +55,13 @@ const Contact = () => {
       href: 'https://github.com/Sahildyno',
       color: 'from-gray-600 to-gray-400',
     },
+    {
+      icon: <Twitter className="w-6 h-6" />,
+      label: 'Twitter',
+      href: 'https://x.com/SahilGawad16867',
+      color: 'from-black-600 to-black-400',
+    },
+
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
