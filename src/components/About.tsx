@@ -1,29 +1,28 @@
-
 import { motion } from 'framer-motion';
-import { GraduationCap, Briefcase, Award, Code, Cloud, Settings, Database } from 'lucide-react';
+import {GraduationCap,Briefcase,Award,Code,Cloud,Settings,Database,} from 'lucide-react';
 
 const About = () => {
-  const timeline = [
+  const educationTimeline = [
     {
-      type: 'education',
       title: 'MCA - Master of Computer Applications',
       organization: 'Tilak Maharashtra Vidyapeeth, Pune',
       period: 'Expected 2026',
       icon: <GraduationCap className="w-5 h-5" />,
     },
     {
-      type: 'work',
-      title: 'DevOps Engineer Intern',
-      organization: 'HisanLabs',
-      period: 'July 2024 – June 2025',
-      icon: <Briefcase className="w-5 h-5" />,
-    },
-    {
-      type: 'education',
       title: 'BCA - Bachelor of Computer Applications',
       organization: 'Sinhgad Institute, Pune',
       period: '2023',
       icon: <GraduationCap className="w-5 h-5" />,
+    },
+  ];
+
+  const workTimeline = [
+    {
+      title: 'DevOps Engineer Intern',
+      organization: 'HisanLabs',
+      period: 'July 2024 – June 2025',
+      icon: <Briefcase className="w-5 h-5" />,
     },
   ];
 
@@ -75,26 +74,27 @@ const About = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            I'm a passionate DevOps Engineer specializing in cloud computing, automation, and infrastructure as code. 
-            With a strong foundation in AWS and modern DevOps practices, I bring expertise in building efficient, 
+            I'm a passionate DevOps Engineer specializing in cloud computing, automation, and infrastructure as code.
+            With a strong foundation in AWS and modern DevOps practices, I bring expertise in building efficient,
             scalable systems that bridge development and operations seamlessly.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Timeline */}
+          {/* Education & Experience Section */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
-              <Award className="w-6 h-6 mr-3 text-blue-400" />
-              Education & Experience
+            {/* Education */}
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <GraduationCap className="w-6 h-6 mr-3 text-blue-400" />
+              Education
             </h3>
-            <div className="space-y-6">
-              {timeline.map((item, index) => (
+            <div className="space-y-6 mb-10">
+              {educationTimeline.map((item, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -103,11 +103,7 @@ const About = () => {
                   viewport={{ once: true }}
                   className="flex items-start space-x-4"
                 >
-                  <div className={`p-3 rounded-full ${
-                    item.type === 'education' 
-                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500' 
-                      : 'bg-gradient-to-r from-green-500 to-teal-500'
-                  } text-white`}>
+                  <div className="p-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white">
                     {item.icon}
                   </div>
                   <div className="flex-1">
@@ -118,9 +114,36 @@ const About = () => {
                 </motion.div>
               ))}
             </div>
+
+            {/* Experience */}
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <Briefcase className="w-6 h-6 mr-3 text-green-400" />
+              Experience
+            </h3>
+            <div className="space-y-6">
+              {workTimeline.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.2, duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="flex items-start space-x-4"
+                >
+                  <div className="p-3 rounded-full bg-gradient-to-r from-green-500 to-teal-500 text-white">
+                    {item.icon}
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-white">{item.title}</h4>
+                    <p className="text-green-400 font-medium">{item.organization}</p>
+                    <p className="text-gray-400 text-sm">{item.period}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
 
-          {/* Skills */}
+          {/* Skills Section */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
