@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle, Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -60,6 +60,12 @@ const Contact = () => {
       label: 'Twitter',
       href: 'https://x.com/SahilGawad16867',
       color: 'from-black-600 to-black-400',
+    },
+    {
+      icon: <Instagram className="w-6 h-6" />,
+      label: 'Instagram',
+      href: 'https://www.instagram.com/_sahilgawade_/',
+      color: 'from-Red-600 to-Red-400',
     },
 
   ];
