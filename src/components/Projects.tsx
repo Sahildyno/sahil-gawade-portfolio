@@ -5,24 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const Portfolio = () => {
   const projects = [
-    {
-      title: 'Amazon Clone - Full-Stack eCommerce on AWS',
-      description: 'A comprehensive eCommerce platform deployed on AWS with scalable architecture, featuring user authentication, product catalog, shopping cart, and payment integration.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      technologies: ['AWS EC2', 'Terraform', 'Docker', 'Jenkins', 'CloudWatch', 'React', 'Node.js', 'MongoDB'],
-      icon: <ShoppingCart className="w-6 h-6" />,
-      color: 'from-blue-500 to-cyan-500',
-      links: {
-        demo: '#',
-        github: '#',
-      },
-      highlights: [
-        'Auto-scaling infrastructure',
-        'CI/CD with Jenkins',
-        'Containerized deployment',
-        'Real-time monitoring',
-      ],
-    },
+    
     
     {
       title: 'Car Rental System - Web Application',
@@ -60,7 +43,25 @@ const Portfolio = () => {
     'CI/CD setup with GitLab pipelines',
     'MySQL database with data backup strategy',
   ],
-}
+},
+
+{
+      title: 'Amazon Clone - Full-Stack eCommerce on AWS',
+      description: 'A comprehensive eCommerce platform deployed on AWS with scalable architecture, featuring user authentication, product catalog, shopping cart, and payment integration.',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
+      technologies: ['AWS EC2', 'Terraform', 'Docker', 'Jenkins', 'CloudWatch', 'React', 'Node.js', 'MongoDB'],
+      icon: <ShoppingCart className="w-6 h-6" />,
+      color: 'from-blue-500 to-cyan-500',
+      links: {
+        github: '#',
+      },
+      highlights: [
+        'Auto-scaling infrastructure',
+        'CI/CD with Jenkins',
+        'Containerized deployment',
+        'Real-time monitoring',
+      ],
+    }
 
     
   ];
@@ -137,13 +138,7 @@ const Portfolio = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <Button
-                    onClick={() => window.open(project.links.demo, '_blank')}
-                    className="flex-1 bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    View Demo
-                  </Button>
+                  
                   <Button
                     onClick={() => window.open(project.links.github, '_blank')}
                     variant="outline"
