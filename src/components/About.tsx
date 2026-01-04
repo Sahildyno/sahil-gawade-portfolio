@@ -33,7 +33,7 @@ const About = () => {
     },
 
     {
-      title: 'Full Stack Intern',
+      title: 'Development Intern (Mern Stack)',
       organization: 'Umberkar Technology',
       period: 'Oct 2025 – Dec 2025',
       icon: <Briefcase className="w-5 h-5" />,
