@@ -42,13 +42,13 @@ const About = () => {
     {
       title: 'Programming & Scripting',
       icon: <Code className="w-6 h-6" />,
-      skills: ['Bash/Shell', 'Python', 'Django'],
+      skills: ['HTML', 'CSS', 'JavaScript', 'React.js','Node.js', 'Bash/Shell', 'Python', 'Django'],
       color: 'from-purple-500 to-pink-500',
     },
     {
       title: 'Database',
       icon: <Database className="w-6 h-6" />,
-      skills: ['MySQL', 'SQL'],
+      skills: ['MySQL', 'SQL', 'MongoDB'],
       color: 'from-orange-500 to-red-500',
     },
     {

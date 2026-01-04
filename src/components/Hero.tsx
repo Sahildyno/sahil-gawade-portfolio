@@ -9,6 +9,10 @@ interface HeroProps {
 
 const Hero = ({ scrollToSection }: HeroProps) => {
   const skills = [
+    { name: 'React.js', icon: <Cloud className="w-5 h-5" />, color: 'from-orange-400 to-orange-600' },
+    { name: 'Node.js', icon: <Cloud className="w-5 h-5" />, color: 'from-orange-400 to-orange-600' },
+    { name: 'MongoDB', icon: <Cloud className="w-5 h-5" />, color: 'from-orange-400 to-orange-600' },
+    { name: 'TailWindCSS', icon: <Cloud className="w-5 h-5" />, color: 'from-orange-400 to-orange-600' },
     { name: 'AWS', icon: <Cloud className="w-5 h-5" />, color: 'from-orange-400 to-orange-600' },
     { name: 'Terraform', icon: <Server className="w-5 h-5" />, color: 'from-purple-400 to-purple-600' },
     { name: 'Docker', icon: <Code className="w-5 h-5" />, color: 'from-blue-400 to-blue-600' },
@@ -177,7 +181,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
               >
                 <div className="flex items-center gap-2 text-white">
                   <Cloud className="w-5 h-5 text-blue-400" />
-                  <span className="text-sm font-medium">AWS</span>
+                  <span className="text-sm font-medium">Full Stack </span>
                 </div>
               </motion.div>
 
