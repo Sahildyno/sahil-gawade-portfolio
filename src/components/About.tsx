@@ -21,10 +21,28 @@ const About = () => {
     {
       title: 'DevOps Engineer Intern',
       organization: 'HisanLabs',
-      period: 'July 2024 – June 2025',
+      period: 'Sept 2024 – June 2025',
+      icon: <Briefcase className="w-5 h-5" />,
+    },
+
+    {
+      title: 'Full Stack Intern',
+      organization: 'Jayadhi Multimedia ',
+      period: 'July 2025 – Sept 2025',
+      icon: <Briefcase className="w-5 h-5" />,
+    },
+
+    {
+      title: 'Full Stack Intern',
+      organization: 'Umberkar Technology',
+      period: 'Oct 2025 – Dec 2025',
       icon: <Briefcase className="w-5 h-5" />,
     },
   ];
+
+  
+
+  
 
   const skillCategories = [
     {
